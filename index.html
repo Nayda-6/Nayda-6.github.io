@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nayda Quehuarucho Quispe | Estudiante de Contabilidad</title>
+  <meta name="description" content="Página personal de Nayda Quehuarucho Quispe, estudiante de Contabilidad en la Universidad Católica San Pablo, Arequipa.">
+  <style>
+    :root {
+      --bg: #f7f5f2;
+      --card: #ffffff;
+      --text: #2b2b33;
+      --muted: #6b6b78;
+      --accent: #7a3e65;
+      --accent-soft: #f1e4ec;
+      --border: #e6e1dc;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header.nav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--border);
+    }
+    header.nav nav {
+      max-width: 960px; margin: 0 auto;
+      display: flex; flex-wrap: wrap; gap: 6px 20px;
+      padding: 12px 20px; justify-content: center;
+    }
+    header.nav a { font-size: .95rem; font-weight: 600; color: var(--text); }
+    header.nav a:hover { color: var(--accent); text-decoration: none; }
+
+    .hero {
+      text-align: center;
+      padding: 64px 20px 48px;
+      background: linear-gradient(180deg, var(--accent-soft), var(--bg));
+    }
+    .avatar {
+      width: 120px; height: 120px; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.6rem; font-weight: 700;
+      margin: 0 auto 18px;
+      object-fit: cover;
+    }
+    .hero h1 { font-size: 2.1rem; }
+    .hero p.sub { color: var(--muted); font-size: 1.1rem; margin-top: 6px; }
+    .hero .links { margin-top: 20px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; padding: 9px 18px; border-radius: 999px;
+      background: var(--accent); color: #fff; font-weight: 600; font-size: .95rem;
+    }
+    .btn:hover { opacity: .9; text-decoration: none; }
+    .btn.outline { background: transparent; color: var(--accent); border: 1.5px solid var(--accent); }
+
+    main { max-width: 960px; margin: 0 auto; padding: 10px 20px 60px; }
+    section { margin-top: 40px; }
+    section > h2 {
+      font-size: 1.5rem; margin-bottom: 16px;
+      padding-bottom: 8px; border-bottom: 2px solid var(--accent-soft);
+    }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 14px; padding: 22px;
+    }
+    .card p + p { margin-top: 12px; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .course h3 { font-size: 1.05rem; margin-bottom: 8px; color: var(--accent); }
+    .course ul { list-style: none; }
+    .course li { padding: 4px 0; font-size: .95rem; }
+    .course li small { display: block; color: var(--muted); }
+    .tag {
+      display: inline-block; font-size: .8rem; background: var(--accent-soft);
+      color: var(--accent); border-radius: 999px; padding: 2px 10px; margin-top: 8px;
+    }
+
+    .facts { list-style: none; }
+    .facts li { padding: 6px 0; border-bottom: 1px dashed var(--border); }
+    .facts li:last-child { border-bottom: none; }
+    .facts strong { display: inline-block; min-width: 130px; }
+
+    .classmates { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+    .classmates li {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 10px; padding: 12px 16px;
+    }
+
+    footer { text-align: center; color: var(--muted); font-size: .88rem; padding: 26px 20px; border-top: 1px solid var(--border); }
+
+    @media (max-width: 520px) {
+      .hero h1 { font-size: 1.7rem; }
+      .facts strong { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#formacion">Formación</a>
+      <a href="#cursos">Cursos y profesores</a>
+      <a href="#companeros">Compañeros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <!-- Si tienes una foto, reemplaza este div por: <img class="avatar" src="foto.jpg" alt="Foto de Naida"> -->
+    <div class="avatar">NQ</div>
+    <h1>Nayda Quehuarucho Quispe</h1>
+    <p class="sub">Estudiante de Contabilidad · Arequipa, Perú</p>
+    <div class="links">
+      <!-- TODO: reemplaza los # por tus enlaces reales -->
+      <a class="btn" href="https://www.linkedin.com/in/nayda-quehuarucho-quispe-04b73a38b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn outline" href="#" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+
+  <main>
+
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <div class="card">
+        <p>
+          Soy estudiante de Contabilidad en la Universidad Católica San Pablo (Arequipa), actualmente en el
+          tercer semestre. Me interesa entender cómo funcionan los números detrás de un negocio: registrar,
+          analizar y tomar mejores decisiones con la información financiera.
+        </p>
+        <p>
+          Soy una persona responsable, con ganas de aprender y de mejorar cada día, tanto en lo académico
+          como en lo profesional.
+        </p>
+      </div>
+    </section>
+
+    <section id="formacion">
+      <h2>Formación</h2>
+      <div class="card">
+        <ul class="facts">
+          <li><strong>Carrera:</strong> Contabilidad</li>
+          <li><strong>Universidad:</strong> Universidad Católica San Pablo (UCSP), Arequipa</li>
+          <li><strong>Nivel actual:</strong> Tercer semestre</li>
+          <li><strong>Año:</strong> 2026</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="cursos">
+      <h2>Cursos y profesores (semestre actual)</h2>
+      <div class="grid">
+
+        <article class="card course">
+          <h3>Contabilidad 3</h3>
+          <ul>
+            <li>
+              Giovanna María García Jarufe
+              <small><a href="https://www.linkedin.com/in/giovanna-m-garc%C3%ADa-jarufe?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a></small>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card course">
+          <h3>Legislación Laboral</h3>
+          <ul>
+            <li>
+              Giovanna María García Jarufe
+              <small><a href="https://www.linkedin.com/in/giovanna-m-garc%C3%ADa-jarufe?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a></small>
+            </li>
+            <li>
+              Carlos Rodrigo Abarca Rubianes
+              <small><a href="https://www.linkedin.com/in/carlos-abarca-rubianes-b2242a35?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a></small>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card course">
+          <h3>Liderazgo</h3>
+          <ul>
+            <li>
+              Andrés Gabriel Paz Guillén
+              <small><a href="https://www.linkedin.com/in/andr%C3%A9s-gabriel-paz-guillen-210767410?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a></small>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card course">
+          <h3>Historia de Occidente I</h3>
+          <ul>
+            <li>
+              Mario Rommel Arce Espinoza
+              <small><a href="https://www.linkedin.com/in/mario-rommel-arce-espinoza-94585b19a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a></small>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card course">
+          <h3>Introducción a la Computación</h3>
+          <ul>
+            <li>
+              Ernesto Cuadros Vargas
+              <small><a href="https://www.linkedin.com/in/ecuadrosv?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a></small>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card course">
+          <h3>Cálculo en una Variable</h3>
+          <ul>
+            <li>
+              Jesús Enrique Achire Quispe
+              <small><a href="https://www.linkedin.com/in/jesus-enrique-achire-quispe-a842303b6?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a></small>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card course">
+          <h3>Filosofía de la Naturaleza</h3>
+          <ul>
+            <li>
+              Isabel Morales Benito
+              <small><a href="https://www.linkedin.com/in/isabel-morales-benito-96847134?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a></small>
+            </li>
+            <li>
+              David Luis Matto Neyra
+              <small><a href="https://www.linkedin.com/in/david-matto-neyra-2773a73a7?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a></small>
+            </li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="companeros">
+      <h2>Páginas de mis compañeros</h2>
+      <!-- TODO: reemplaza cada "Nombre del compañero/a" y el # con su nombre y el link de su página -->
+      <ul class="classmates">
+        <li><a href="https://shady-lopez-hachata.github.io/" target="_blank" rel="noopener">Shady Lidia Lopez Hachata/a 1</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Rudi Luz Quispe Sucasaca/a 2</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Samuel Santiago Quispe Figueroa/a 3</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Raquel Noemi Velasquez Yucra/a 4</a></li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <div class="card">
+        <ul class="facts">
+          <!-- TODO: completa con tus datos reales -->
+          <li><strong>Correo:</strong> <a href="mailto:naydaqq@gmail.com">naydaqq@gamail.com</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nayda-quehuarucho-quispe-04b73a38b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener">Mi perfil de LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Nayda Quehuarucho Quispe · Universidad Católica San Pablo
+  </footer>
+
+</body>
+</html>
